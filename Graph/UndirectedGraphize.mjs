@@ -3,7 +3,7 @@ import { UndirectedGraph } from "./Graph.mjs";
 export function UndirectedGraphize(edges_array = []){
     let undirectedGraph = new UndirectedGraph();
     edges_array.forEach((x) => {
-        undirectedGraph.addEdgeBetweenNodes(x[0], x[1]);
+        undirectedGraph.createNodeAndaddEdgeBetween(x[0], x[1]);
     });
     return undirectedGraph;
 }
